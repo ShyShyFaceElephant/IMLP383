@@ -39,10 +39,16 @@ randint(min,max,size) # 亂數陣列(或整數)
 rand(row,col) #亂數陣列
 randn(row,col) #常態分佈亂數陣列
 ```
-# np.array屬性
+### np.array屬性
 - dtype 元素資料型態
 - size 陣列大小
 - shape NxM
 - itemsize 元素占用位元組
 - ndim 維度
 - nbytes 總占用位元組
+
+## Unut 2 - 2 NumPy純量、向量、矩陣
+```python
+C = A.dot(B) # dot運算
+np.lingl
+```
