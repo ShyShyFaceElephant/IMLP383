@@ -15,7 +15,7 @@
 10. git push
 
 ## Unit 1 丟失QQ
-## Unut 2
+## Unut 2 - 1 NumPy基礎
 ### array vs. list
 - list 資料型態可以不同
 - list 可以自由增減元素
@@ -32,4 +32,17 @@ arr=np.zeros((2,2)) #[[0,0],[0,0]]
 # reshape
 arr=np.arange(16)
 b=a.reshape((4,4)) #[[0,1,2,3],[4,5,6,7],[8,9,10,11],[12,13,14,15]]
+# 亂數
+seed(int) # 亂數種子
+random() # 0.0 ~ 0.1 亂數
+randint(min,max,size) # 亂數陣列(或整數)
+rand(row,col) #亂數陣列
+randn(row,col) #常態分佈亂數陣列
 ```
+# np.array屬性
+- dtype 元素資料型態
+- size 陣列大小
+- shape NxM
+- itemsize 元素占用位元組
+- ndim 維度
+- nbytes 總占用位元組
