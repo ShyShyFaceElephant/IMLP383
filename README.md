@@ -23,4 +23,13 @@
 lis = [2,4,5]
 arr = np.array(lis)
 arr += 1 #全部加一
+# np.array初始化
+arr=np.array(lis,dtype=float)
+arr=np.arange(5) #[0,1,2,3,4]
+arr=np.zeros(5) #[0,0,0,0,0]
+arr=np.ones(5) #[1,1,1,1,1]
+arr=np.zeros((2,2)) #[[0,0],[0,0]]
+# reshape
+arr=np.arange(16)
+b=a.reshape((4,4)) #[[0,1,2,3],[4,5,6,7],[8,9,10,11],[12,13,14,15]]
 ```
