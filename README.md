@@ -15,3 +15,12 @@
 10. git push
 
 ## Unit 1 丟失QQ
+## Unut 2
+### array vs. list
+- list 資料型態可以不同
+- list 可以自由增減元素
+```python
+lis = [2,4,5]
+arr = np.array(lis)
+arr += 1 #全部加一
+```
