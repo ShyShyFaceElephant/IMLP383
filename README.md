@@ -48,16 +48,21 @@ randn(row,col) #常態分佈亂數陣列
 - nbytes 總占用位元組
 
 ## Unut 2 - 2 NumPy純量、向量、矩陣
+
 ```python
 C = A.copy() #複製陣列
 A.fill(4) #所有元素填成4
-# 向量(一維)
+```
+### 向量(一維)
+```python
 C = (A % 2 == 0) # 布林陣列偶數為True
 C = A.dot(B) # dot運算
 np.linalg.norm(V) # 向量長度
 C = A[:,np.newaxis] #新增維度
 C = concatenate((a,b)) #陣列連接
-# 矩陣(二維)
+```
+### 矩陣(二維)
+```python
 C = A + B
 C = A - B
 C = A * B #對應元素一一相乘
@@ -67,3 +72,5 @@ C = A.ravel() #平坦化
 C = A.transpose #轉置矩陣
 C = concatenate((a,b),axis=0) #axis=0向下連接、axis=1向右連接
 ```
+### 陣列廣播性質
+- 形狀不符矩陣在做四則運算時，會自動擴充。
