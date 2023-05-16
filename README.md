@@ -49,6 +49,14 @@ randn(row,col) #常態分佈亂數陣列
 
 ## Unut 2 - 2 NumPy純量、向量、矩陣
 ```python
+# 向量(一維)
+C = (A % 2 == 0) # 布林陣列偶數為True
 C = A.dot(B) # dot運算
-np.lingl
+np.linalg.norm(V) # 向量長度
+# 矩陣(二維)
+C = A + B
+C = A - B
+C = A * B #對應元素一一相乘
+C = A / B  #對應元素一一相除
+C = A.dot(B) #才是真正的矩陣相乘
 ```
