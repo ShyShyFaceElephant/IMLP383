@@ -62,6 +62,8 @@ C = A[:,np.newaxis] #新增維度
 C = concatenate((a,b)) #陣列連接
 C = A.ceil() #向上取整
 C = A.floor() #向下取整
+C = np.random.randint(min,max,size)
+C = np.random.rand(size) # 0~1隨機陣列
 ```
 ### 矩陣(二維)
 ```python
@@ -73,6 +75,11 @@ C = A.dot(B) #才是真正的矩陣相乘
 C = A.ravel() #平坦化
 C = A.transpose #轉置矩陣
 C = concatenate((a,b),axis=0) #axis=0向下連接、axis=1向右連接
+C = np.sum(A,axis=0) #縱向和結果陣列
+C = np.meam(A,axis=0) #縱向平均結果陣列
+C = np.average(A,axis=0,weights=w) #縱向加權平均結果陣列
+C = np.var(A,axis=0) #縱向變異數結果陣列
+C = np.sort(A,axis=0) #縱向排序
 ```
 ### 陣列廣播性質
 - 形狀不符矩陣在做四則運算時，會自動擴充。
