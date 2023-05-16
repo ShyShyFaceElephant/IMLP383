@@ -60,6 +60,8 @@ C = A.dot(B) # dot運算
 np.linalg.norm(V) # 向量長度
 C = A[:,np.newaxis] #新增維度
 C = concatenate((a,b)) #陣列連接
+C = A.ceil() #向上取整
+C = A.floor() #向下取整
 ```
 ### 矩陣(二維)
 ```python
