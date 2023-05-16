@@ -42,21 +42,28 @@ randn(row,col) #常態分佈亂數陣列
 ### np.array屬性
 - dtype 元素資料型態
 - size 陣列大小
-- shape NxM
+- shape 回傳(N,M)
 - itemsize 元素占用位元組
 - ndim 維度
 - nbytes 總占用位元組
 
 ## Unut 2 - 2 NumPy純量、向量、矩陣
 ```python
+C = A.copy() #複製陣列
+A.fill(4) #所有元素填成4
 # 向量(一維)
 C = (A % 2 == 0) # 布林陣列偶數為True
 C = A.dot(B) # dot運算
 np.linalg.norm(V) # 向量長度
+C = A[:,np.newaxis] #新增維度
+C = concatenate((a,b)) #陣列連接
 # 矩陣(二維)
 C = A + B
 C = A - B
 C = A * B #對應元素一一相乘
 C = A / B  #對應元素一一相除
 C = A.dot(B) #才是真正的矩陣相乘
+C = A.ravel() #平坦化
+C = A.transpose #轉置矩陣
+C = concatenate((a,b),axis=0) #axis=0向下連接、axis=1向右連接
 ```
