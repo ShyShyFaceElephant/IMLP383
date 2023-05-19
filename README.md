@@ -64,6 +64,12 @@ C = A.ceil() #向上取整
 C = A.floor() #向下取整
 C = np.random.randint(min,max,size)
 C = np.random.rand(size) # 0~1隨機陣列
+C = np.argmax(A) # 回傳最大值索引
+C = np.where(A>B) # 回傳符合的索引值陣列
+C = np.where(A>5,0,1) # 回傳陣列對應值>5放0，否則放1
+C = np.piecewise(x,[x<4,x>7],[lambda x:x*2,lambda x:x*3]) # 對應值<4放x*2，對應值>7放x*3，否則放0
+C = np.bincount(x) # 計數排序
+C = unique(x) # 回傳只出現一次的值的索引
 ```
 ### 矩陣(二維)
 ```python
